@@ -1,10 +1,32 @@
 import java.util.ArrayList;
 
+
+
+
 public class Proprietario {
+
+
+    public Proprietario(String nome,int CNH){
+        this.cnh = CNH;
+        this.nome = nome;
+    }
+
     private String nome;
-    private ArrayList<String> carros = new ArrayList<String>();
+    int cnh;
+    private ArrayList<Carro> carros = new ArrayList<Carro>();
+
+    public void mostrarCarros(){
+        for (Carro carro : carros) {
+            System.out.println("Modelo: " + carro.getModelo());
+        }
+    }
     
- 
+    public int getCNH() {
+        return cnh;
+   }
+    public void setCNH(int cNH) {
+        this.cnh = cNH;
+    }
     public String getNome() {
         return nome;
     }
@@ -12,11 +34,10 @@ public class Proprietario {
         this.nome = nome;
     }
 
-    public ArrayList<String> getCarros() {
+    public ArrayList<Carro> getCarros() {
         return carros;
     }
-    public void setCarros(ArrayList<String> carros) {
-        this.carros = carros;
-
+    public void setCarros(Carro carros){
+        this.carros.add(carros);
     }
 }
