@@ -1,13 +1,19 @@
-
+import java.util.ArrayList;
 
 public class AppDetran {
 
     static void testaCriarProprietario(){
-        Proprietario  proprietario = new Proprietario("Marcelo Duarte", 333444774);
+       
 
-        proprietario.setCarros(new Carro("Chevette","AFD3KJ2".toCharArray()));
+        Carro carro1 = new Carro("Chevette","AFD3KJ2".toCharArray());
 
-        proprietario.setCarros(new Carro("Uno", "JKN3HH4".toCharArray()));
+        Carro carro2 = new Carro("Uno", "JKN3HH4".toCharArray());
+
+        ArrayList<Carro> listaCarro = new ArrayList<Carro>();
+
+        listaCarro.add(carro1);
+        listaCarro.add(carro2);
+        Proprietario  proprietario = new Proprietario("Marcelo Duarte", 333444774,listaCarro);
 
         proprietario.mostrarCarros();
 

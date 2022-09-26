@@ -6,9 +6,10 @@ import java.util.ArrayList;
 public class Proprietario {
 
 
-    public Proprietario(String nome,int CNH){
+    public Proprietario(String nome,int CNH,ArrayList<Carro> carros){
         this.cnh = CNH;
         this.nome = nome;
+        this.carros = carros;
     }
 
     private String nome;
