@@ -18,7 +18,7 @@ public class Proprietario {
 
     public void mostrarCarros(){
         for (Carro carro : carros) {
-            System.out.println("Modelo: " + carro.getModelo());
+            System.out.println("Modelo: " + carro.getModelo() + "\nPlaca: " + String.valueOf(carro.getPlaca()));
         }
     }
     
