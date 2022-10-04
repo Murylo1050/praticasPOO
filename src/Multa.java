@@ -1,4 +1,9 @@
 public class Multa{
+
+    public Multa(){
+        contMulta++;
+    }
+    private int contMulta=0;
     private String infracao;
     private double valor;
     
@@ -13,6 +18,9 @@ public class Multa{
     }
     public void setValor(double valor) {
         this.valor = valor;
+    }
+    public int getContMulta(){
+        return contMulta;
     }
 
 

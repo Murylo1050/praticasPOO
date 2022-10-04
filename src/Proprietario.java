@@ -10,7 +10,12 @@ public class Proprietario {
         this.cnh = CNH;
         this.nome = nome;
         this.carros = carros;
+        contProprietarios++;
     }
+
+    private int contProprietarios=0;
+
+   
 
     private String nome;
     int cnh;
@@ -40,5 +45,8 @@ public class Proprietario {
     }
     public void setCarros(Carro carros){
         this.carros.add(carros);
+    }
+     public int getContProprietarios() {
+        return contProprietarios;
     }
 }

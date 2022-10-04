@@ -5,9 +5,9 @@ public class AppDetran {
     static void testaCriarProprietario(){
        
 
-        Carro carro1 = new Carro("Chevette","AFD3KJ2".toCharArray());
+        Carro carro1 = new Carro("Chevette");
 
-        Carro carro2 = new Carro("Uno", "JKN3HH4".toCharArray());
+        Carro carro2 = new Carro("Uno");
 
         ArrayList<Carro> listaCarro = new ArrayList<Carro>();
 
@@ -20,7 +20,7 @@ public class AppDetran {
     }
 
     static void testaCriarMulta(){
-        Carro carro1 = new Carro("Fusca", "FHG4ERV".toCharArray());
+        Carro carro1 = new Carro("Fusca");
 
         Multa multa1 = new Multa();
 
