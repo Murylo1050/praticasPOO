@@ -3,10 +3,11 @@ import java.util.ArrayList;
 
 public class Carro {
 
-        static int numSequencial=0;
+        private static int carrosCriados=0;
+        private static int numSequencial=0;
     
     public Carro(String modelo){
-    this.modelo = modelo;
+        this.modelo = modelo;
     
     
 		char digitosPlaca[] =  {65,65,65,48,65};
@@ -23,6 +24,9 @@ public class Carro {
 		this.placa = String.copyValueOf(digitosPlaca);
 		
 		this.placa+= String.format("%03d", numSequencial++);
+
+
+        carrosCriados++;
 
         
     }
@@ -58,6 +62,10 @@ public class Carro {
 
     public void setModelo(String modelo) {
         this.modelo = modelo;
+    }
+
+    public void qtdDeCarrosCriados(){
+        System.out.println("Foram criados " + carrosCriados + " carros!");
     }
     
 
