@@ -22,5 +22,10 @@ public class Lutador extends Combatente {
 		}
 	}
 	
-
+	@Override
+    public String toString() {
+        String retorno = "Lutador [identificacao=" + identificacao + "]";
+        
+        return retorno;
+    }
 }

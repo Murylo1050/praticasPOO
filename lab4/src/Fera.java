@@ -22,5 +22,11 @@ public class Fera extends Combatente {
 		}
 	}
 	
+	@Override
+    public String toString() {
+        String retorno = "Fera [identificacao=" + identificacao + "]";
+        
+        return retorno;
+    }
 
 }
