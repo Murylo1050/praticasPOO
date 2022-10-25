@@ -1,4 +1,4 @@
-public class Arma {
+public class Arma implements Fogo, Perfurante, EfeitoMoral {
 
     public Arma(){
         golpe[0] = new Golpe();
@@ -31,6 +31,21 @@ public class Arma {
         String retorno = "Arma [descricao=" + descricao + "]";
         
         return retorno;
+    }
+    @Override
+    public void atirar() {
+        // TODO Auto-generated method stub
+        
+    }
+    @Override
+    public void perfurar() {
+        // TODO Auto-generated method stub
+        
+    }
+    @Override
+    public void explodir() {
+        // TODO Auto-generated method stub
+        
     }
 }
 
