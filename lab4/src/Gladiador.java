@@ -1,4 +1,6 @@
-public class Gladiador extends Combatente{
+import artemarcial.ArteMarcial;
+
+public class Gladiador extends Combatente implements ArteMarcial{
 
     public Gladiador(String identificacao) {
         super(identificacao);

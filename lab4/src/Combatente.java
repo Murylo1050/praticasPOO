@@ -1,4 +1,4 @@
-public class Combatente {
+public abstract class Combatente {
 	
 	protected String  identificacao;
 	protected int nivelEnergia;
@@ -10,10 +10,7 @@ public class Combatente {
 		
 	}
 
-	public void atacar(Combatente adversario) {
-		int poderOfensivo = (int)(Math.random() * 100);
-		adversario.defender(poderOfensivo);
-	}
+	abstract void atacar(Combatente adversario);
 	
 	public String getIdentificacao() {
 		return identificacao;
